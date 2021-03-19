@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000"
+        >
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start"
+       >
+        <Constraint
+            android:id="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/tvSocialLogin"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+        <Constraint
+            android:id="@+id/btnGoogle"
+            motion:layout_constraintEnd_toStartOf="@+id/btnFb"
+            motion:layout_constraintHorizontal_chainStyle="spread"
+            motion:layout_constraintTop_toBottomOf="@+id/tvSocialLogin"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:alpha="0.3" />
+        <Constraint
+            android:id="@+id/btnTwitter"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/btnFb"
+            motion:layout_constraintTop_toBottomOf="@+id/tvSocialLogin"
+            android:alpha="0.3" />
+        <Constraint
+            android:id="@+id/btnFb"
+            motion:layout_constraintEnd_toStartOf="@+id/btnTwitter"
+            motion:layout_constraintStart_toEndOf="@id/btnGoogle"
+            motion:layout_constraintTop_toBottomOf="@+id/tvSocialLogin"
+            android:alpha="0.3" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end"
+       >
+
+
+    </ConstraintSet>
+</MotionScene>-->
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragRight"
+            motion:touchAnchorId="@id/button"
+            motion:touchAnchorSide="right" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@id/button">
+            <Layout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/end"
+        motion:deriveConstraintsFrom="@id/start">
+
+        <Constraint android:id="@id/button">
+            <Layout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                motion:layout_constraintEnd_toEndOf="parent" />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

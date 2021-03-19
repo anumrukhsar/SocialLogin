@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="headerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="iconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="twitterStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/color_twitter</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="fbStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/color_fb</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="googleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/color_google</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SocialLoginHelper</string>
+    <string name="social_login">Social Login!</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="google">Google</string>
+    <string name="twitter">Twitter</string>
+    <!--Replace with your facebook app id-->
+    <string name="facebook_app_id">1368905750141170</string>
+    <string name="client_server_auth">99929255779-hsq1u6o2f2s9rmh1jfp5f0uopnnfhtqi.apps.googleusercontent.com</string>
+</resources>
